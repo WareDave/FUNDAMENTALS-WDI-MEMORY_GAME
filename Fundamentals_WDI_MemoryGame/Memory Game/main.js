@@ -35,7 +35,7 @@ function checkForMatch() {
     //setTimeout('location', 50000);
     //location.reload()
   } else {
-    alert("Sorry, try again");
+    alert("Sorry, doomed to try again");
   }
 }
 
@@ -66,17 +66,7 @@ function createBoard() {
 function pageReset() {
   document.getElementById('reset-button');
 }
-	var score = 0;
-var highscoreStore = window.localStorage.getItem('highscoreStore');
-if(window.localStorage.getItem('highscoreStore') == null){
-				if (score > highscoreStore){
-					window.localStorage.setItem("highscoreStore", score);
-				} else {
-					window.localStorage.setItem("highscoreStore", score);
-		}
-	}
-
-
+	
 
 
 createBoard();
