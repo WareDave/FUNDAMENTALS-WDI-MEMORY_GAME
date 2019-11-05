@@ -1,45 +1,31 @@
 console.log("Up and running!");
 
-var inPlay = [];
-
-
-var score = 0;
-var highscoreStore = window.localStorage.getItem('highscoreStore');
-if(window.localStorage.getItem('highscoreStore') == null){
-				if (score > highscoreStore){
-					window.localStorage.setItem("highscoreStore", score);
-				} else {
-					window.localStorage.setItem("highscoreStore", score);
-		}
-	}
 
 if (inPlay.length === 2) {
 	checkForMatch();
 
 var cards = [
-  {
-    rank: "queen",
-    suit: "hearts",
-    cardImage: "images/queen-of-hearts.png"
-  },
-  {
-    rank: "queen",
-    suit: "diamonds",
-    cardImage: "images/queen-of-diamonds.png"
-  },
-
-  {
-    rank: "king",
-    suit: "hearts",
-    cardImage: "images/king-of-hearts.png"
-  },
-  {
-    rank: "king",
-    suit: "diamonds",
-    cardImage: "images/king-of-diamonds.png"
-  }
+	{ 
+		rank: "queen",
+		suit: "hearts",
+		cardIMG: "images/queen-of-hearts.png"
+	},
+	{
+		rank: "queen",
+		suit: "diamonds",
+		cardIMG: "images/queen-of-diamonds.png"
+	},
+	{
+		rank: "king",
+		suit: "hearts",
+		cardIMG: "images/king-of-hearts.png"
+	},
+	{
+		rank: "king",
+		suit: "diamonds",
+		cardIMG: "images/king-of-diamonds.png"
+	}
 ];
-
 var cardsInPlay = [];
 
 function checkForMatch() {
@@ -80,6 +66,16 @@ function createBoard() {
 function pageReset() {
   document.getElementById('reset-button');
 }
+	var score = 0;
+var highscoreStore = window.localStorage.getItem('highscoreStore');
+if(window.localStorage.getItem('highscoreStore') == null){
+				if (score > highscoreStore){
+					window.localStorage.setItem("highscoreStore", score);
+				} else {
+					window.localStorage.setItem("highscoreStore", score);
+		}
+	}
+
 
 
 
